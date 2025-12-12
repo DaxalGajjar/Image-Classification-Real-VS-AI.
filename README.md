@@ -16,11 +16,44 @@ The notebook includes a complete end-to-end workflow:
 
 Features
 
-Binary classification (0 = AI, 1 = Real)
-Uses TensorFlow Keras + Xception pretrained on ImageNet
-Data augmentation (rotation, shear, zoom, flip, brightness)
-Highly structured generator-based pipeline
-Training, validation, and test separation using CSV metadata
-Saves model (.h5 format)
-Generates prediction CSV
-Visualization of training curves (accuracy & loss)
+1.Binary classification (0 = AI, 1 = Real)
+2.Uses TensorFlow Keras + Xception pretrained on ImageNet
+3.Data augmentation (rotation, shear, zoom, flip, brightness)
+4.Highly structured generator-based pipeline
+5.Training, validation, and test separation using CSV metadata
+6.Saves model (.h5 format)
+7.Generates prediction CSV
+8.Visualization of training curves (accuracy & loss)
+
+Requirements
+
+1 This notebook runs on Google Colab.
+2 Install Dependencies
+3 Colab already provides TensorFlow.
+4 The notebook imports:
+5 tensorflow
+6 numpy
+7 pandas
+8 matplotlib
+9 keras (from TensorFlow)
+10 Xception pretrained model
+No additional manual installation is required.
+
+Use Cases
+
+This model is useful for:
+Image authenticity verification
+Detecting deepfakes
+Research projects on GAN fingerprinting
+College/university computer vision assignments
+Training further models for AI detection
+
+Future Improvements
+
+You may extend this project by:
+1 Using EfficientNetV2, ViT, or ConvNeXt
+2 Applying GAN fingerprint extraction
+3 Building a complete API with FastAPI
+4 Creating a mobile app for user-side classification
+5 Expanding dataset size
+
